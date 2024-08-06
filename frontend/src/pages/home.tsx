@@ -8,7 +8,7 @@ export function Home() {
         <>
             <TopBar></TopBar>
             <VideoPlayer></VideoPlayer>
-            <h1 className="text-white font-extralight flex align-middle justify-center text-4xl">Start your virtual tour</h1>
+            <h1 className="text-white font-thin flex align-middle justify-center text-4xl"><i>Start your virtual tour:</i></h1>
             <hr className="w-2/3 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-4 flex items-center">
             <Card name={"Faculty"} image = {"https://img.freepik.com/premium-photo/man-is-standing-front-blackboard-that-says-earth_1252102-12698.jpg?size=626&ext=jpg&uid=R158122041&ga=GA1.1.1473895447.1722960613&semt=ais_hybrid"}></Card>
