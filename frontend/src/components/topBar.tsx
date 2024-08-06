@@ -8,7 +8,7 @@ export function TopBar(){
                 <span className="text-lg font-thin text-pretty text-white ml-2"><i>Explore IGDTUW</i></span>
             </div>
             <div className="flex items-center">
-                <button className="ml-4 px-4 py-2 bg-sky-600 text-white font-thin rounded hover:bg-sky-700">Home</button>
+                {/* <button className="ml-4 px-4 py-2 bg-sky-600 text-white font-thin rounded hover:bg-sky-700">Home</button> */}
                 <button className="ml-4 px-4 py-2 bg-sky-600  text-white font-thin rounded hover:bg-sky-700">Login/Register</button>
             </div>
         </div>

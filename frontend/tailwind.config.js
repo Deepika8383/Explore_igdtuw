@@ -6,22 +6,15 @@ export default {
   ],
   theme: {
     extend: {
-      keyframes: {
-        bounceIn: {
-          '0%, 20%, 40%, 60%, 80%, 100%': {
-            transform: 'translateY(0)',
-          },
-          '50%': {
-            transform: 'translateY(-10px)',
-          },
-        },
-      },
-      animation: {
-        bounceIn: 'bounceIn 0.5s ease-in-out',
+      width: {
+        '1/4': '25%',
+        '1/3': '33.333333%',
+        '1/2': '50%',
+        '2/3': '66.666667%',
+        '3/4': '75%',
+        'full': '100%',
       },
     },
   },
   plugins: [],
 };
-
-

@@ -1,15 +1,11 @@
-import { useEffect, useRef } from "react";
-import { Card } from "../components/cardMain";
-import { TopBar } from "../components/topBar";
-import sampleVideo from '../image/sample.mp4'
 
-export function Home() {
+import { Card } from "../components/cardMain";
+import { Header } from "../components/Header";
+
+export function Faculty() {
     return (
         <>
-            <TopBar></TopBar>
-            <VideoPlayer></VideoPlayer>
-            <h1 className="text-white font-extralight flex align-middle justify-center text-4xl">Start your virtual tour</h1>
-            <hr className="w-2/3 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+            <Header></Header>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-4 flex items-center">
             <Card name={"Faculty"} image = {"https://img.freepik.com/premium-photo/man-is-standing-front-blackboard-that-says-earth_1252102-12698.jpg?size=626&ext=jpg&uid=R158122041&ga=GA1.1.1473895447.1722960613&semt=ais_hybrid"}></Card>
             <Card name={"Departments"} image={"https://img.freepik.com/premium-photo/elearning-online-education-concept-male-student-learning-lesson-process-holding-hands-laptop-keyboard-web-internet-technology-online-educational-webinar_183314-13576.jpg?w=900"}></Card>
@@ -21,32 +17,3 @@ export function Home() {
         </>
     )
 }
-
-const VideoPlayer: React.FC = () => {
-    const videoRef = useRef<HTMLVideoElement>(null);
-    useEffect(() => {
-        if (videoRef.current) {
-            videoRef.current.play();
-        }
-    }, []);
-    const handleVideoClick = () => {
-        if (videoRef.current) {
-            if (videoRef.current.paused) {
-                videoRef.current.play();
-            } else {
-                videoRef.current.pause();
-            }
-        }
-    };
-    return (
-        <div className="flex w-full p-4 h-[90vh] mb-36">
-            <video
-                loop={true}
-                ref={videoRef}
-                className="w-full h-full rounded-xl">
-                <source src={sampleVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    );
-};
